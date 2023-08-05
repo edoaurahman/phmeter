@@ -1,6 +1,6 @@
 # phmeter
 
-A new Flutter project.
+For monitoring PH, PPM, and Temperature
 
 ## Getting Started
 
