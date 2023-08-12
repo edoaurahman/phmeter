@@ -2,18 +2,75 @@
                 style="@style/Widget.Android.AppWidget.Container"
                 android:theme="@style/Theme.Android.AppWidgetContainer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:id="@+id/widget_container"
+                android:background="@drawable/app_widget_background"
+                android:layout_height="wrap_content">
 
     <TextView
             style="@style/Widget.Android.AppWidget.InnerView"
-            android:id="@+id/appwidget_text"
+            android:id="@+id/suhu"
+            android:background="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="@string/appwidget_text"
-            android:textSize="24sp"
-            android:textStyle="bold|italic"
+            android:layout_alignParentStart="true"
             android:layout_margin="8dp"
-            android:contentDescription="@string/appwidget_text"/>
+            android:text="@string/suhu"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:contentDescription="Text 1"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            style="@style/Widget.Android.AppWidget.InnerView"
+            android:id="@+id/ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suhu"
+            android:layout_alignParentStart="true"
+            android:text="@string/ph"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:contentDescription="Text 2"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    <TextView
+            style="@style/Widget.Android.AppWidget.InnerView"
+            android:id="@+id/ppm"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ph"
+            android:layout_alignParentStart="true"
+            android:text="@string/ppm"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:contentDescription="PPM"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    <ImageButton
+            style="@style/Widget.Android.AppWidget.InnerView"
+            android:id="@+id/btn_refresh"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/refresh"
+            android:scaleType="centerCrop"
+            android:src="@drawable/refresh"
+            android:contentDescription="Image Button"
+            android:layout_alignParentRight="true"/>
 </RelativeLayout>
