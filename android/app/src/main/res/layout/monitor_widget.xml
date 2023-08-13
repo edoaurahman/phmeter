@@ -7,21 +7,26 @@
                 android:layout_height="wrap_content">
 
     <TextView
-            style="@style/Widget.Android.AppWidget.InnerView"
+            android:textColor="@color/black"
             android:id="@+id/suhu"
             android:background="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_margin="8dp"
             android:text="@string/suhu"
             android:textSize="24sp"
             android:textStyle="bold"
             android:contentDescription="Text 1"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
 
     <TextView
-            style="@style/Widget.Android.AppWidget.InnerView"
+            android:textColor="@color/black"
             android:id="@+id/ph"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +46,7 @@
             android:layout_marginBottom="8dp"/>
 
     <TextView
-            style="@style/Widget.Android.AppWidget.InnerView"
+            android:textColor="@color/black"
             android:id="@+id/ppm"
             android:background="@color/white"
             android:layout_width="wrap_content"
@@ -61,7 +66,6 @@
             android:layout_marginBottom="8dp"/>
 
     <ImageButton
-            style="@style/Widget.Android.AppWidget.InnerView"
             android:id="@+id/btn_refresh"
             android:layout_width="35dp"
             android:layout_height="35dp"
