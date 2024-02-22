@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/request/request.dart';
-import 'package:phmeter/app/modules/home/TempModel.dart';
+import 'package:phmeter/app/modules/home/temp_model.dart';
 import 'package:phmeter/config.dart';
 
 class HomeProvider extends GetConnect {
@@ -14,9 +14,9 @@ class HomeProvider extends GetConnect {
     });
   }
 
-  Future<temp_model> getTemp() async {
+  Future<TempModel> getTemp() async {
     final response = await get("phmeter.php?getFirst");
 
-    return temp_model.fromJson(response.body[0]);
+    return TempModel.fromJson(response.body[0]);
   }
 }

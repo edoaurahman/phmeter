@@ -1,5 +1,5 @@
-class temp_model {
-  temp_model({
+class TempModel {
+  TempModel({
     num? id,
     dynamic ph,
     dynamic temp,
@@ -13,7 +13,7 @@ class temp_model {
     _timestamp = timestamp;
   }
 
-  temp_model.fromJson(dynamic json) {
+  TempModel.fromJson(dynamic json) {
     _id = json['id'];
     _ph = json['ph'];
     _temp = json['temp'];
@@ -25,14 +25,14 @@ class temp_model {
   String? _temp;
   String? _ppm;
   String? _timestamp;
-  temp_model copyWith({
+  TempModel copyWith({
     num? id,
     String? ph,
     String? temp,
     String? ppm,
     String? timestamp,
   }) =>
-      temp_model(
+      TempModel(
         id: id ?? _id,
         ph: ph ?? _ph,
         temp: temp ?? _temp,
