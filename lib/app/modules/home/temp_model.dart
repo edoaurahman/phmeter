@@ -1,6 +1,6 @@
 class TempModel {
   TempModel({
-    num? id,
+    String? id,
     dynamic ph,
     dynamic temp,
     dynamic ppm,
@@ -20,13 +20,13 @@ class TempModel {
     _ppm = json['ppm'];
     _timestamp = json['timestamp'];
   }
-  num? _id;
+  String? _id;
   String? _ph;
   String? _temp;
   String? _ppm;
   String? _timestamp;
   TempModel copyWith({
-    num? id,
+    String? id,
     String? ph,
     String? temp,
     String? ppm,
@@ -39,7 +39,7 @@ class TempModel {
         ppm: ppm ?? _ppm,
         timestamp: timestamp ?? _timestamp,
       );
-  num? get id => _id;
+  String? get id => _id;
   String? get ph => _ph;
   String? get temp => _temp;
   String? get ppm => _ppm;

@@ -10,7 +10,7 @@ class ConfigEnvironments {
   static const List<Map<String, String>> _availableEnvironments = [
     {
       'env': Environments.local,
-      'url': 'http://103.150.191.174/',
+      'url': 'http://vmi455525.contaboserver.net/',
     },
     {
       'env': Environments.develop,

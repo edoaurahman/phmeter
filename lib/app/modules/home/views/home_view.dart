@@ -118,7 +118,7 @@ class HomeView extends GetView<HomeController> {
                                     child: LightsScreen(
                                       title: 'PH',
                                       min: 0,
-                                      max: 14,
+                                      max: 20,
                                       value: controller.phSliderData.value,
                                     )),
                                 SizedBox(

@@ -15,8 +15,8 @@ class HomeProvider extends GetConnect {
   }
 
   Future<TempModel> getTemp() async {
-    final response = await get("phmeter.php?getFirst");
+    final response = await get("index.php?getFirst");
 
-    return TempModel.fromJson(response.body[0]);
+    return TempModel.fromJson(response.body);
   }
 }

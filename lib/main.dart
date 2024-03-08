@@ -16,7 +16,7 @@ void main() async {
       titleBarStyle: TitleBarStyle.normal,
     );
     windowManager.waitUntilReadyToShow(windowOptions, () async {
-      await windowManager.setResizable(false);
+      await windowManager.setResizable(true);
       await windowManager.show();
       await windowManager.focus();
     });
